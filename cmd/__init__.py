@@ -1,4 +1,3 @@
-
 from flask import Blueprint
 
 cmd_app = Blueprint('cmd', __name__)

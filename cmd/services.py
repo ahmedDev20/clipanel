@@ -11,7 +11,7 @@ def single_line_command(cmd):
 
 
 def args_command(cmd):
-    return subprocess.Popen(cmd, stdout=subprocess.PIPE)
+    return subprocess.Popen(cmd, stdout=subprocess.PIPE, shell=True)
 
 
 def add_command(key, cmd, args, distribution):

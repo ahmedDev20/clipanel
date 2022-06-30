@@ -4,10 +4,6 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-
-
-
-
 with app.app_context():
     print('-'*20 + 'Initializing' + '-' * 20 )
     import app_module
@@ -16,13 +12,8 @@ with app.app_context():
     setup()
 
 
-
-
-
-
 @app.route('/')
 def hello_world():
-
     return 'home'
 
 
@@ -42,7 +33,7 @@ test
 
 # clone repo and delete venv folder 
 # python -m venv venv 
-# . venv/bin/activate 
+# ./venv/Scripts/activate 
 # pip install -r requirements.txt
  
 
